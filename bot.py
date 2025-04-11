@@ -28,7 +28,7 @@ def crop_to_square(img):
     top = (height - min_dim) // 2
     return img.crop((left, top, left + min_dim, top + min_dim))
 
-def create_image_grid(images, rows=5, cols=3, gap=10):
+def create_image_grid(images, rows=5, cols=3, gap=11):
     img_size = 300
     processed_images = [
         crop_to_square(img).resize((img_size, img_size))
